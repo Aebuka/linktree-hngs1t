@@ -3,5 +3,3 @@ export default function Avatar ({img}) {
     <img id="profile__img" src={img} alt="" />
   )
 }
-
-// const share = document.getElementsByClassName("share-img").

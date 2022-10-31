@@ -7,7 +7,7 @@ import Footer from "./Footer";
 import slackImg from "../assets/images/slack.png";
 import githubImg from "../assets/images/github.png";
 import shareImgm from "../assets/images/mobileAvatarShare.png";
-// import shareImgw from "../assets/images/webAvatarShare.png";
+import shareImgw from "../assets/images/webAvatarShare.png";
 
 export default function App() {
   return (
@@ -16,12 +16,12 @@ export default function App() {
         <a href="/">
           <img className="share-img" src={shareImgm} alt="" />
         </a>
-        {/* <a href="/">
-          <img src={shareImgw} alt="" />
-        </a> */}
+        <a href="/">
+          <img className="share-img hidden" src={shareImgw} alt="" />
+        </a>
         <Avatar img={profileImg} />
         <h1 id="twitter">Chukwuaebuka</h1>
-        <p id="slack">Chukwuaebuka</p>
+        <p id="slack">Aebuka</p>
       </div>
       <div className="linktree">
         {links.map((link) => {

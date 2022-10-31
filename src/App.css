@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
 
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -8,13 +7,12 @@
 }
 
 body {
-    font-family: "Inter", sans-serif;
-    background-color: white;
+  font-family: "Inter", sans-serif;
+  background-color: white;
 }
 
 .App {
-  margin: 30px 60px;
-  /* text-align: center; */
+  margin: 30px 10px;
 }
 
 .linktree {
@@ -51,9 +49,13 @@ body {
 }
 
 .share-img {
-    position: absolute;
-    top: -20px;
-    right: 0px;
+  position: absolute;
+  top: -20px;
+  right: 0px;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 #profile__img {
@@ -87,11 +89,18 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .App {
+    margin: 30px 60px;
+  }
+
   .footer {
     flex-direction: row;
   }
 
   .share-img {
     right: calc(100% - 75%);
-}
+  }
+  .hidden {
+    visibility: visible;
+  }
 }
