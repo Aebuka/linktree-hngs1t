@@ -88,6 +88,61 @@ body {
   width: 150px;
 }
 
+/* contact.css */
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  gap: .8em;
+}
+
+#btn__submit {
+  background-color: #1570EF;
+  color: white;
+  border: 1px solid #1570EF;
+  padding: 12px 20px;
+  border-radius: 8px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px 6px;
+  border-radius: 8px;
+  border: 1px solid #D0D5DD;
+  margin-top: 7px;
+}
+
+textarea {
+  resize: none;
+}
+
+.checkbox {
+  display: flex;
+  gap: .3em;
+}
+
+.checkbox :first-child {
+  align-self: baseline;
+}
+
+.fname-lname {
+  display: flex;
+  flex-direction: column;
+  gap: .8em;
+}
+
+::placeholder {
+  color: #667085;
+  font-family: "Inter";
+}
+
+.top-section p {
+  color: #475467;
+  margin: 1em 0;
+}
+
+/* contact.css End */
+
 @media screen and (min-width: 768px) {
   .App {
     margin: 30px 60px;
@@ -102,5 +157,19 @@ body {
   }
   .hidden {
     visibility: visible;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-form-wrapper {
+    padding: .4em;
+    margin: 0 10em;
+  }
+  .fname-lname {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .fname-lname-child {
+    flex-grow: 1;
   }
 }

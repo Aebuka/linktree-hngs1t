@@ -41,6 +41,12 @@ export const links = [
     dataTip: "Get you a really good rule book for design",
     displayName: "Design Books",
   },
+  {
+    key: 7,
+    id: "contact",
+    href: "/contacts",
+    displayName: "Contact Me",
+  }
 ];
 
 export default function Buttonlink({ dataTip, id, href, displayName }) {
