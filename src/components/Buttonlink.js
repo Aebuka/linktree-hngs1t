@@ -44,7 +44,7 @@ export const links = [
   {
     key: 7,
     id: "contact",
-    href: "/contacts",
+    href: "/contact",
     displayName: "Contact Me",
   }
 ];

@@ -13,7 +13,7 @@ export default function Contact() {
           <h1>Contact Me</h1>
           <p>Hi there, contact me to ask me about anything you have in mind.</p>
         </div>
-        <form action="" method="post">
+        <form action="/contact">
           <div className="form-container">
             <div className="fname-lname">
               <Input
@@ -52,10 +52,11 @@ export default function Contact() {
                 cols="30"
                 rows="10"
                 placeholder="Send me a message and I'll reply you as soon as possible..."
+                required
               ></textarea>
             </div>
             <div className="checkbox">
-              <input type="checkbox" name="" id="checkbox" />
+              <input type="checkbox" name="" id="checkbox" required/>
               <label htmlFor="checkbox">
                 You agree to providing your data to {name} who may contact
                 you.

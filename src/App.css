@@ -112,8 +112,20 @@ body {
   margin-top: 7px;
 }
 
+input:focus {
+  outline-color: #84CAFF;
+}
+
 textarea {
   resize: none;
+}
+
+textarea:focus {
+  outline-color: #84CAFF;
+}
+
+button:focus {
+  outline-color: #84CAFF;
 }
 
 .checkbox {
@@ -155,6 +167,7 @@ textarea {
   .share-img {
     right: calc(100% - 75%);
   }
+
   .hidden {
     visibility: visible;
   }
@@ -165,10 +178,12 @@ textarea {
     padding: .4em;
     margin: 0 10em;
   }
+
   .fname-lname {
     flex-direction: row;
     justify-content: space-between;
   }
+
   .fname-lname-child {
     flex-grow: 1;
   }
